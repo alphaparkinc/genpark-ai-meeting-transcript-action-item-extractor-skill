@@ -1,0 +1,34 @@
+{
+  "name": "genpark-ai-meeting-transcript-action-item-extractor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Meeting transcript intelligent summarizer, action item extractor & assignee resolver.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "meeting-summarizer",
+    "action-item-extractor",
+    "transcript-ai",
+    "meeting-intelligence"
+  ],
+  "inputs": {
+    "transcript_text": {
+      "type": "string"
+    },
+    "participant_names": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "summary": {
+      "type": "string"
+    },
+    "action_items": {
+      "type": "array"
+    },
+    "decisions_made": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
